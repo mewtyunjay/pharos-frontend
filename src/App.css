@@ -1,38 +1,53 @@
+/* App.css */
+
+/* General styles for the entire app */
 .App {
+  font-family: 'Arial', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  width: 100%; /* Ensure .App container takes full width */
+  height: 100vh; /* Optional: if you want .App to take full viewport height */
+  padding: 20px;
+  box-sizing: border-box; /* Includes padding in width calculation */
+  background-color: #f4f4f9;
   }
+
+/* Styles specifically for the button */
+button {
+  padding: 12px 24px; /* Generous padding to make the button easy to click */
+  font-size: 16px; /* Large font size for readability */
+  color: white; /* White text color for contrast */
+  background-color: #007bff; /* Bright blue background, standard for actionable items */
+  border: none; /* No border to keep the button sleek */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+  outline: none; /* Removes the outline to keep focus style clean */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Hover and active states for the button to provide visual feedback */
+button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover for visual feedback */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Subtle shadow for depth */
 }
 
-.App-link {
-  color: #61dafb;
+button:active {
+  background-color: #004495; /* Even darker blue to simulate a pressed button */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Deeper shadow to enhance the pressed effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* App.css */
+html, body, #root {
+  height: 100%;
+  width: 100%; /* Ensure full width */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scroll bars if not necessary */
 }
+
+.map-container {
+width: 100%; /* Full width of its container */
+height: 80vh; /* Adjust based on your layout needs */
+margin: 0 auto; /* Centering if necessary */
+}
+
+/* Other styles remain unchanged */
